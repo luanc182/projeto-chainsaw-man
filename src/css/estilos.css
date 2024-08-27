@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+
+
+body {
+    background-color: #282828;
+    color: #fff;
+}
+
+.cabecalho,
+.rodape {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+.cabecalho .menu,
+.menu2 {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(40, 40, 40, 1) 100%, rgba(255, 255, 255, 1) 282828%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 100px 80px 80px 70px;
+    max-width: 780px;
+    margin-left: 50%;
+}
+
+.home .informacoes .titulo {
+    font-size: 55px;
+    font-family: "Ga Maamli", sans-serif;
+}
+
+.home .informacoes .texto {
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: "Roboto", sans-serif;
+}
+
+.texto span {
+    color: #eead11;
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+    
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+section .titulo {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+}
+
+.cartao .capa-do-filme {
+    max-width: 300px;
+}
+
+section .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 10px;
+    width: 50%;
+    padding: 80px;
+    gap: 23px;
+}
+
+section .cartao .btn {
+    font-size: 17px;
+}
+
+section .informacoes {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    gap: 20px;
+}
+
+section .informacoes h3 {
+    font-size: 33px;
+}
+
+section .informacoes p {
+    font-size: 20px;
+}
+
+.cartao .informacoes span {
+    color: #eead11;
+}
+
+.rodape .titulo{
+font-size: 15px;
+}
+
+.rodape .menu2 li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.rodape .menu2 li a:hover {
+    border-top: 2px solid #fff
+}
